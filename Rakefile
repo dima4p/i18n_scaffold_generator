@@ -17,10 +17,10 @@ Jeweler::Tasks.new do |gem|
   gem.name = "i18n_scaffold_generator"
   gem.homepage = "http://github.com/dima4p/i18n_scaffold_generator"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Generates translation file in /config/locales}
+  gem.description = %Q{Generates translation file in /config/locales for the scafolding model and for the controller}
   gem.email = "dima@koulikoff.ru"
-  gem.authors = ["Dmitri Koulikoff (acer)"]
+  gem.authors = ["Dmitri Koulikoff"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new

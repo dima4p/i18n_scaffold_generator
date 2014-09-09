@@ -1,0 +1,24 @@
+en:
+  activerecord:
+    models:
+      <%= file_name %>: "<%= file_name.humanize %>"
+    attributes:
+      <%= file_name %>: <% attributes.each do |a| %>
+        <%= a.name %>: "<%= a.name.humanize %>"<% end %>
+  <%= plural_file_name %>:
+    edit:
+      title: "Editing of the <%= file_name.humanize.downcase %>"
+    form:
+      <%= file_name %>: "<%= file_name.humanize %>"
+    index:
+      confirm: "Are you sure you want to delete the <%= file_name.humanize.downcase %>?"
+      empty: "No <%= plural_file_name.humanize.downcase %> found"
+      new_<%= file_name %>: "Add a new <%= file_name.humanize.downcase %>"
+      title: "Listing of <%= plural_file_name.humanize.downcase %>"
+    new:
+      title: "Adding a new <%= file_name.humanize.downcase %>"
+    show:
+      title: "<%= file_name.humanize %> details"
+    was_created: "<%= file_name.humanize %> was successfully added"
+    was_destroyed: "<%= file_name.humanize %> was successfully deleted"
+    was_updated: "<%= file_name.humanize %> was successfully updated"

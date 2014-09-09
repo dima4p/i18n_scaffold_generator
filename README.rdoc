@@ -1,6 +1,30 @@
 = i18n_scaffold_generator
 
-Description goes here.
+When in rails you generate a scaffold no translation file is generated. This gem
+is designed to cover this shortage.
+
+== Installation
+
+Add to your Gemfile
+
+  gem 'i18n_scaffold_generator'
+
+Then bundle as usual.
+
+== Usage
+
+Next time you run
+
+  rails generate scaffold SomeModel
+
+a file named some_models_en.yml will be created in config/locales.
+
+You can get the translations for other languages using {TranslationsSync gem}[https://github.com/dima4p/translations_sync] by running
+
+  rake translations:sync IN=some_models
+
+This will generate the translation files for all the others languages used in the project.
+After that you will need to manually write the translations for the lines inside them. ;-)
 
 == Contributing to i18n_scaffold_generator
  
@@ -14,6 +38,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2014 Dmitri Koulikoff (acer). See LICENSE.txt for
+Copyright (c) 2014 Dmitri Koulikoff. See LICENSE.txt for
 further details.
 
