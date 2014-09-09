@@ -36,6 +36,10 @@ After that you will need to manually write the translations for the lines inside
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
+== Many thanks to
+
+* {Dmitry Shlensky}[https://github.com/shlensky] <shld@list.ru> for the idea and the code.
+
 == Copyright
 
 Copyright (c) 2014 Dmitri Koulikoff. See LICENSE.txt for
