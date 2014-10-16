@@ -6,6 +6,11 @@ en:
     attributes:
       <%= file_name %>: <% attributes.each do |a| %>
         <%= a.name %>: "<%= a.name.humanize %>"<% end %>
+  helpers:
+    submit:
+      <%= file_name %>:
+        create: "Create <%= file_name %>"
+        update: "Update <%= file_name %>"
   <%= plural_file_name %>:
     edit:
       title: "Editing of the <%= file_name.humanize.downcase %>"
