@@ -9,8 +9,8 @@ en:
   helpers:
     submit:
       <%= file_name %>:
-        create: "Create <%= file_name %>"
-        update: "Update <%= file_name %>"
+        create: "Create <%= file_name.humanize.downcase %>"
+        update: "Update <%= file_name.humanize.downcase %>"
   <%= plural_file_name %>:
     edit:
       title: "Editing of the <%= file_name.humanize.downcase %>"
